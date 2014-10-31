@@ -30,3 +30,6 @@ Pods
 # AppCode specific files
 .idea/
 *.iml
+
+# AppToken
+AppToken.plist
