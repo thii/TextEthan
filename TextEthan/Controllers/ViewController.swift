@@ -5,22 +5,18 @@ class ViewController: UIViewController {
   @IBOutlet var firstNameField: UITextField!
   @IBOutlet var lastNameField: UITextField!
   @IBOutlet var signInButton: UIButton!
-  @IBOutlet var signInView: UIView!
-  @IBOutlet var infoView: UIView!
+  @IBOutlet var tapToChatButton: UIButton!
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    if infoView != nil {
-      infoView.hidden = true
-    }
+
+    tapToChatButton.hidden = true
     
     if NSUserDefaults.standardUserDefaults().objectForKey("signedIn") != nil {
-      infoView.hidden = false
-      signInView.hidden = true
+      firstNameField.hidden = true
+      lastNameField.hidden = true
       signInButton.hidden = true
-
-      SupportKit.show()
+      tapToChatButton.hidden = false
     }
   }
   
@@ -29,22 +25,32 @@ class ViewController: UIViewController {
   }
   
   @IBAction func nameChanged(sender: AnyObject) {
+    
+    if (countElements(firstNameField.text) > 0) && (countElements(lastNameField.text) > 0) {
+      signInButton.enabled = true
+    } else {
+      signInButton.enabled = false
+    }
   }
   
   @IBAction func signIn(sender: AnyObject) {
+    SKTUser.currentUser().firstName = firstNameField.text
+    SKTUser.currentUser().lastName = lastNameField.text
+    
+    tapToChatButton.hidden = false
+    firstNameField.hidden = true
+    lastNameField.hidden = true
+    
+    NSUserDefaults.standardUserDefaults().setObject(NSNumber(bool: true), forKey: "signedIn")
+    NSUserDefaults.standardUserDefaults().synchronize()
+    
+    SupportKit.track("Signed In")
+    SupportKit.show()
   }
 
   @IBAction func showMessages(sender: AnyObject) {
+    
+    SupportKit.track("Tap to Chat")
+    SupportKit.show()
   }
-
-  /*
-  // MARK: - Navigation
-  
-  // In a storyboard-based application, you will often want to do a little preparation before navigation
-  override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-  // Get the new view controller using segue.destinationViewController.
-  // Pass the selected object to the new view controller.
-  }
-  */
-  
 }

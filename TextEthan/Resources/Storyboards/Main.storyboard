@@ -23,6 +23,9 @@
                                 <color key="textColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameChanged:" destination="PVI-hV-I8o" eventType="editingChanged" id="shT-aZ-fyu"/>
+                                </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mvV-RN-q7i">
                                 <rect key="frame" x="-11" y="177" width="611" height="70"/>
@@ -30,6 +33,9 @@
                                 <color key="textColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="nameChanged:" destination="PVI-hV-I8o" eventType="editingChanged" id="y2f-2x-QAM"/>
+                                </connections>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TextEthan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjV-XK-FB2">
                                 <rect key="frame" x="0.0" y="28" width="600" height="70"/>
@@ -44,6 +50,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="signIn:" destination="PVI-hV-I8o" eventType="touchUpInside" id="xpl-h1-Rub"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp0-X6-A8J">
                                 <rect key="frame" x="0.0" y="332" width="600" height="70"/>
@@ -52,6 +61,9 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showMessages:" destination="PVI-hV-I8o" eventType="touchUpInside" id="vRC-Cz-OaK"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
@@ -69,6 +81,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BbY-Gh-ViY"/>
+                    <connections>
+                        <outlet property="firstNameField" destination="hjk-vd-xp1" id="ILN-bl-RiQ"/>
+                        <outlet property="lastNameField" destination="mvV-RN-q7i" id="ymt-K8-t5c"/>
+                        <outlet property="signInButton" destination="2Ba-WV-9O1" id="uA8-6U-3Ka"/>
+                        <outlet property="tapToChatButton" destination="Yp0-X6-A8J" id="JEA-BK-OnR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iRf-os-Jhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
