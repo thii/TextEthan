@@ -34,7 +34,6 @@
 		17E3DCCCD2437518D91241FC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2DEF8355B4CA114BACFEC03E /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FCB86410CB8BB12339918A7 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		55BE0C42126D3BED695DE892 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		5917DDDD9A311003C31A26D8 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		848B78C11A03983000B34660 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		848B78C41A0399A100B34660 /* TextEthan-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TextEthan-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -110,13 +109,6 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		4D23FB5D8F9316352368FEC4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		4E5AF510A753EFE8745EDA57 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +121,7 @@
 		579041FD16D32EA6FFA0CF50 /* TextEthan */ = {
 			isa = PBXGroup;
 			children = (
-				D1BBE32CF547E6AEC04F69B0 /* Extensions */,
-				A14C00ACEC9B6F1FE75CBAC7 /* Protocols */,
-				82E9695093F9118866842BB0 /* Models */,
-				785856CD2EED19A1BD0B0F91 /* ViewModels */,
 				B11E88FB8DB29AE8575F295F /* Controllers */,
-				4D23FB5D8F9316352368FEC4 /* Views */,
 				32C92DBB65CAA751F2D6B75F /* Resources */,
 			);
 			path = TextEthan;
@@ -148,13 +135,6 @@
 			path = Storyboards;
 			sourceTree = "<group>";
 		};
-		785856CD2EED19A1BD0B0F91 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
-			sourceTree = "<group>";
-		};
 		823F340254251BBD0175A934 /* Other-Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -163,20 +143,6 @@
 				848B78C41A0399A100B34660 /* TextEthan-Bridging-Header.h */,
 			);
 			path = "Other-Sources";
-			sourceTree = "<group>";
-		};
-		82E9695093F9118866842BB0 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
-		A14C00ACEC9B6F1FE75CBAC7 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		B11E88FB8DB29AE8575F295F /* Controllers */ = {
@@ -196,18 +162,10 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		D1BBE32CF547E6AEC04F69B0 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		DC69515583ACBE66D73BF0E8 = {
 			isa = PBXGroup;
 			children = (
 				579041FD16D32EA6FFA0CF50 /* TextEthan */,
-				F1F055051AD1CC337FD5A97A /* UnitTests */,
 				075A78D6A52A360D6093652A /* Frameworks */,
 				4E5AF510A753EFE8745EDA57 /* Products */,
 				37FAFB8929FD7B41910F0721 /* Pods */,
@@ -216,38 +174,6 @@
 			sourceTree = "<group>";
 			tabWidth = 2;
 			usesTabs = 0;
-		};
-		E64C437C13BB00E8A109C18A /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Helpers;
-			sourceTree = "<group>";
-		};
-		E97D3C8BA5A121485E38A3E5 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		F1F055051AD1CC337FD5A97A /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				F2526D6037DC477F866424C6 /* Resources */,
-				E64C437C13BB00E8A109C18A /* Helpers */,
-				E97D3C8BA5A121485E38A3E5 /* Tests */,
-			);
-			path = UnitTests;
-			sourceTree = "<group>";
-		};
-		F2526D6037DC477F866424C6 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				55BE0C42126D3BED695DE892 /* UnitTests-Info.plist */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
