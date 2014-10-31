@@ -7,14 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2389F0AF7F9901E26AE93042 /* Main.storyboard in Sources */ = {isa = PBXBuildFile; fileRef = E70585005C6146B6678ACE2F /* Main.storyboard */; };
 		2E2C42FDCFB892AA9775A9A0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FCB86410CB8BB12339918A7 /* Images.xcassets */; };
 		43942F75B43F7C8AECDAA091 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE1B99AC14DE40844CF71406 /* libPods.a */; };
 		848B78C21A03983000B34660 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 848B78C11A03983000B34660 /* ViewController.swift */; };
+		848B78C61A039BC500B34660 /* AppToken.plist in Resources */ = {isa = PBXBuildFile; fileRef = 848B78C51A039BC500B34660 /* AppToken.plist */; };
+		848B78C81A039F4300B34660 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 848B78C71A039F4300B34660 /* LaunchScreen.xib */; };
+		848B78CA1A039F5200B34660 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 848B78C91A039F5200B34660 /* Main.storyboard */; };
 		87ED36EA0F14431366D823B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8369A1E0C7204B5ABBE9B20 /* AppDelegate.swift */; };
 		A0D861CA2374F5795848E478 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC6C0B4BB549FA3A68106AE1 /* Foundation.framework */; };
 		C301DDF3ED321601BF12E49A /* libPods-unit_tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DEF8355B4CA114BACFEC03E /* libPods-unit_tests.a */; };
-		E7F9AA02B644F7E48BFF9CCB /* LaunchScreen.xib in Sources */ = {isa = PBXBuildFile; fileRef = D6F13D0335A8EE4D092208D0 /* LaunchScreen.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,11 +37,13 @@
 		55BE0C42126D3BED695DE892 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		5917DDDD9A311003C31A26D8 /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		848B78C11A03983000B34660 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		848B78C41A0399A100B34660 /* TextEthan-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TextEthan-Bridging-Header.h"; sourceTree = "<group>"; };
+		848B78C51A039BC500B34660 /* AppToken.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppToken.plist; sourceTree = "<group>"; };
+		848B78C71A039F4300B34660 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		848B78C91A039F5200B34660 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		A7646B9ECAC07321D80652C3 /* TextEthan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextEthan.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B02B6EA23C60F974068764BC /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6C0B4BB549FA3A68106AE1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D6F13D0335A8EE4D092208D0 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
-		E70585005C6146B6678ACE2F /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E8369A1E0C7204B5ABBE9B20 /* AppDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EE1B99AC14DE40844CF71406 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F34E6537B4F958E232747258 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -80,7 +83,7 @@
 		290000366767C13FBA037B02 /* Nibs */ = {
 			isa = PBXGroup;
 			children = (
-				D6F13D0335A8EE4D092208D0 /* LaunchScreen.xib */,
+				848B78C71A039F4300B34660 /* LaunchScreen.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -140,7 +143,7 @@
 		782E09F613758CD516C858EB /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				E70585005C6146B6678ACE2F /* Main.storyboard */,
+				848B78C91A039F5200B34660 /* Main.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -156,6 +159,8 @@
 			isa = PBXGroup;
 			children = (
 				15C560DE75EE4986F43646FF /* Info.plist */,
+				848B78C51A039BC500B34660 /* AppToken.plist */,
+				848B78C41A0399A100B34660 /* TextEthan-Bridging-Header.h */,
 			);
 			path = "Other-Sources";
 			sourceTree = "<group>";
@@ -320,7 +325,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848B78C61A039BC500B34660 /* AppToken.plist in Resources */,
+				848B78C81A039F4300B34660 /* LaunchScreen.xib in Resources */,
 				2E2C42FDCFB892AA9775A9A0 /* Images.xcassets in Resources */,
+				848B78CA1A039F5200B34660 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,9 +431,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87ED36EA0F14431366D823B0 /* AppDelegate.swift in Sources */,
-				2389F0AF7F9901E26AE93042 /* Main.storyboard in Sources */,
 				848B78C21A03983000B34660 /* ViewController.swift in Sources */,
-				E7F9AA02B644F7E48BFF9CCB /* LaunchScreen.xib in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +607,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TextEthan/Resources/Other-Sources/TextEthan-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -627,6 +634,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "TextEthan/Resources/Other-Sources/TextEthan-Bridging-Header.h";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

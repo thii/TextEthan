@@ -1,7 +1,96 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3nt-yF-7qu">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Uf6-0H-LkQ">
+            <objects>
+                <viewController id="PVI-hV-I8o" customClass="ViewController" customModule="TextEthan" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qQw-Go-hpW"/>
+                        <viewControllerLayoutGuide type="bottom" id="pqz-WB-hdN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Plv-y9-XG0">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="First Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hjk-vd-xp1">
+                                <rect key="frame" x="-5" y="106" width="611" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" placeholder="Last Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mvV-RN-q7i">
+                                <rect key="frame" x="-11" y="177" width="611" height="70"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="TextEthan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NjV-XK-FB2">
+                                <rect key="frame" x="0.0" y="28" width="600" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ba-WV-9O1">
+                                <rect key="frame" x="0.0" y="254" width="600" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <state key="normal" title="Sign In">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp0-X6-A8J">
+                                <rect key="frame" x="0.0" y="332" width="600" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <state key="normal" title="Tap to Chat">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="mvV-RN-q7i" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-21" id="DzV-re-YKS"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hjk-vd-xp1" secondAttribute="trailing" constant="-22" id="IfN-jd-1YM"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="mvV-RN-q7i" secondAttribute="trailing" constant="-22" id="Ife-ec-iEc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Yp0-X6-A8J" secondAttribute="trailing" constant="-16" id="ZGt-Ky-Znh"/>
+                            <constraint firstItem="NjV-XK-FB2" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-16" id="acT-JG-Dsd"/>
+                            <constraint firstItem="2Ba-WV-9O1" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-16" id="eLN-1M-n1v"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="2Ba-WV-9O1" secondAttribute="trailing" constant="-16" id="hV2-oE-b1V"/>
+                            <constraint firstItem="Yp0-X6-A8J" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-16" id="je4-nx-1Ku"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="NjV-XK-FB2" secondAttribute="trailing" constant="-16" id="kcw-sh-Qyd"/>
+                            <constraint firstItem="hjk-vd-xp1" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-21" id="xbR-RF-xMW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="BbY-Gh-ViY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iRf-os-Jhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1629" y="318"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1h9-GP-UA5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="3nt-yF-7qu" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="g48-mc-Sw3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="PVI-hV-I8o" kind="relationship" relationship="rootViewController" id="vjn-ad-q1o"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CUy-V0-dzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="817" y="318"/>
+        </scene>
+    </scenes>
 </document>
