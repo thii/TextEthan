@@ -1,0 +1,10 @@
+PODS:
+  - SupportKit (2.4.2)
+
+DEPENDENCIES:
+  - SupportKit
+
+SPEC CHECKSUMS:
+  SupportKit: d08f43801acda0c97f26583bf371275672c51a9f
+
+COCOAPODS: 0.34.4
