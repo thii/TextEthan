@@ -66,10 +66,10 @@
 "Send" = "Send";
 
 /* Conversation text input place holder */
-"Type a message..." = "Type a message...";
+"Type a message..." = "Enter message";
 
 /* Conversation nav bar left button */
-"Done" = "Done";
+"Done" = "Sign Out";
 
 /* Failure text for chat messages that fail to upload */
 "Message not delivered. Tap to retry." = "Message not delivered. Tap to retry.";

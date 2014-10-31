@@ -17,6 +17,8 @@ class ViewController: UIViewController {
       lastNameField.hidden = true
       signInButton.hidden = true
       tapToChatButton.hidden = false
+      
+      signInButton.enabled = false
     }
   }
   
@@ -40,6 +42,7 @@ class ViewController: UIViewController {
     tapToChatButton.hidden = false
     firstNameField.hidden = true
     lastNameField.hidden = true
+    signInButton.hidden = true
     
     NSUserDefaults.standardUserDefaults().setObject(NSNumber(bool: true), forKey: "signedIn")
     NSUserDefaults.standardUserDefaults().synchronize()

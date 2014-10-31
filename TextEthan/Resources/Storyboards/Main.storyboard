@@ -43,6 +43,17 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp0-X6-A8J">
+                                <rect key="frame" x="0.0" y="332" width="600" height="70"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
+                                <state key="normal" title="Tap to Chat">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMessages:" destination="PVI-hV-I8o" eventType="touchUpInside" id="vRC-Cz-OaK"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ba-WV-9O1">
                                 <rect key="frame" x="0.0" y="254" width="600" height="70"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
@@ -54,25 +65,16 @@
                                     <action selector="signIn:" destination="PVI-hV-I8o" eventType="touchUpInside" id="xpl-h1-Rub"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yp0-X6-A8J">
-                                <rect key="frame" x="0.0" y="332" width="600" height="70"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="37"/>
-                                <state key="normal" title="Tap to Chat">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="showMessages:" destination="PVI-hV-I8o" eventType="touchUpInside" id="vRC-Cz-OaK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="mvV-RN-q7i" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-21" id="DzV-re-YKS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hjk-vd-xp1" secondAttribute="trailing" constant="-22" id="IfN-jd-1YM"/>
                             <constraint firstAttribute="trailingMargin" secondItem="mvV-RN-q7i" secondAttribute="trailing" constant="-22" id="Ife-ec-iEc"/>
+                            <constraint firstAttribute="centerY" secondItem="Yp0-X6-A8J" secondAttribute="centerY" id="Vwq-Cq-EZI"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Yp0-X6-A8J" secondAttribute="trailing" constant="-16" id="ZGt-Ky-Znh"/>
                             <constraint firstItem="NjV-XK-FB2" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-16" id="acT-JG-Dsd"/>
+                            <constraint firstAttribute="centerX" secondItem="Yp0-X6-A8J" secondAttribute="centerX" id="agU-QF-LkX"/>
                             <constraint firstItem="2Ba-WV-9O1" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-16" id="eLN-1M-n1v"/>
                             <constraint firstAttribute="trailingMargin" secondItem="2Ba-WV-9O1" secondAttribute="trailing" constant="-16" id="hV2-oE-b1V"/>
                             <constraint firstItem="Yp0-X6-A8J" firstAttribute="leading" secondItem="Plv-y9-XG0" secondAttribute="leadingMargin" constant="-16" id="je4-nx-1Ku"/>
