@@ -1,19 +1,20 @@
 # TextEthan #
 
-## Setup ##
+Clone of [TextEthan](http://www.textethan.com/) app - a messaging app that allows anyone to message you, written in Swift.
 
-Run `bin/setup`
+## Installation
 
-This will:
+Clone the repository
 
- - Install the gem dependencies
- - Install the pod dependencies
+```
+$ git clone https://github.com/thii/TextEthan.git
+$ cd TextEthan
+$ cp TextEthan/Resources/Other-Sources/AppToken.sample.plist TextEthan/Resources/Other-Sources/AppToken.plist
+$ open TextEthan.xcworkspace
+```
 
-## Testing ##
+Sign up for a free app token on [SupportKit.io](https://app.supportkit.io)
 
-Run `bin/test`
+Copy and paste the app token into the value of `AppToken` key in AppToken.plist file in the TextEthan project. You'll want to replace the string that says "YOUR-APP-TOKEN" with your own token.
 
-This will run the tests from the command line, and pipe the result through
-[XCPretty][].
-
-[XCPretty]: https://github.com/supermarin/xcpretty
+Now you will be able to build/run your app. Users of your app will be able to send you text messages. These messages will show up in your inbox as e-mail. Your replies will automatically be transformed into messages in the app.
